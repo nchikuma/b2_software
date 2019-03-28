@@ -1,0 +1,47 @@
+
+A library to access beam summary data and quick summary data
+
+------------------------------------------------------------
+
+
+0. Compile 
+ just "make" at here (the place where this README file exists)
+
+ Then, following files are generated. 
+
+   lib/libBeamData.a
+   lib/so/libBeamData.so
+
+ 
+1. Install 
+
+ Please copy following three items. 
+
+   * the directory of "BeamData" to a place for header files in your environment.
+   * the files of lib/libBeamData.a and/or lib/so/libBeamData.so 
+     to a place for libraries in your environment. 
+
+   * the directory of "spilldb" to a place for database files in your environment 
+     or your prefered place.
+     (there are database files for Beam run number in this directory.)
+       
+
+2. check test program
+   First, make a test program in the example directory
+
+   > cd example
+   > make
+   ..
+
+   Then, an executable file, 'test', is generated.
+   
+   Please run as follows;
+
+      > ./test <somewhere>/spilldb  p02  <somewhere>/beam_summary
+
+
+   Here, first arugment  is the directory of "spilldb" you installed,
+   second argument is the version of beam summary data, and
+   third argument is the directory of beam summary data.
+
+
